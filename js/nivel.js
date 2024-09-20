@@ -6,12 +6,13 @@ const leftTor = document.getElementById("leftTor");
 const rightTor = document.getElementById("rightTor");
 const descripcion = document.getElementById("descripcion");
 const portadas = document.querySelectorAll(".level-image");
+const jugar = document.getElementById("jugar");
 const menu = document.getElementById("menuPrincipal");
 
 const DescripcionNivewl = {
-    1: "Es un ambiente natural con una gran montaña en medio del mapa con un camino en espiral para subir a la cima; contará con un gran río rodeando la montaña que hará que el jugador tenga que rodear para llegare a la meta.",
-    2: "Una planta de petroleo en 3 islas, el jugador deberá recorrer los tres mapas para encontrar lo que busca, mientras se mueve entre las islas por medio de barcos que fungirán como plataformas para que el jugador cruce de un lado a otro.",
-    3: "El jugador se encontrará en diferentes plataformas flotantes sobre un pozo de aceite, deberá tener cuidado con los saltos para caer sobre las plataformas y avanzar, y evitar caer para no morir."
+    1: "NIVEL 1. Colina de la polvora",
+    2: "NIVEL 2. Islas petroleras",
+    3: "NIVEL 3. Basurero de Aceite"
 };
 
 
@@ -53,6 +54,10 @@ function selectLevel(level) {
     descripcion.textContent = DescripcionNivewl[selectedLevel];
 }
 
+
+jugar.addEventListener("click", () => {
+    window.location.href = "game.html";
+});
 
 menu.addEventListener("click", () => {
     window.location.href = "mainMenu2.html";

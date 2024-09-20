@@ -1,33 +1,48 @@
 body {
     font-family: Verdana, sans-serif;
-    background-color: rgb(144, 255, 253);;
+    background-image: url('../img/back2.jpg');
     color: #333;
     text-align: center;
 }
 
+.game-canvas {
+    width: 1280px; 
+    height: 720px; 
+    margin: 50px auto; 
+    border: 1px solid white; 
+    overflow: hidden; 
+    position: relative;
+    background-color: rgb(144, 255, 253);
+}
+
+/* Estructura del encabezado */
+.header-content {
+    align-items: center;
+    display: flex;
+}
+
 /* Logo animado */
 .logo img {
-    width: 790px;
+    width: 400px;
     animation: growShrink 5s ease-in-out infinite;
 }
 
 @keyframes growShrink {
     0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+    50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
-
 
 .selector {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-
 button img {
-    width: 80px;
+    width: 60px;
     height: auto;
 }
 
@@ -35,6 +50,21 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.menu-button-left button {
+    margin-right: 290px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #15cc40;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-button-left button:hover {
+    background-color: #0d9f2f;
 }
 
 .titulo {
@@ -46,11 +76,11 @@ button {
 .portadas {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .level-image {
-    width: 380px;
+    width: 300px;
     height: auto;
     border: 2px solid gray;
     filter: grayscale(100%);
@@ -71,13 +101,14 @@ button {
 
 .NivelDescripcion {
     background-color: #15cc40;
-    padding: 20px;
-    border-radius: 25px;
-    width: 60%;
+    padding: 0.3px;
+    border-radius: 55px;
+    width: 30%;
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
+    margin-top: 60px;
 }
 
 .menu-button {
@@ -86,7 +117,7 @@ button {
 
 .menu-button button {
     padding: 10px;
-    font-size: 18px;
+    font-size: 24px;
     background-color: #15cc40;
     border-radius: 8px;
     cursor: pointer;
