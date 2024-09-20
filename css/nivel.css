@@ -50,7 +50,7 @@ button {
 }
 
 .level-image {
-    width: 400px;
+    width: 380px;
     height: auto;
     border: 2px solid gray;
     filter: grayscale(100%);
