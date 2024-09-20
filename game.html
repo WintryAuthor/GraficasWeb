@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/gameWindow.css" rel="stylesheet">
+    <title>Pantalla de Juego con WebGL</title>
+
+</head>
+
+<body>
+
+    <!-- <canvas id="gameCanvas" width="960" height="540"></canvas> -->
+    <canvas id="gameCanvas" width="1200" height="675"></canvas>
+
+    <div id="pauseMenu">
+        <h2>Menú de Pausa</h2>
+        <button class="menu-button" onclick="resumeGame()">Reanudar</button>
+        <button class="menu-button" onclick="openSettings()">Configuración</button>
+        <button class="menu-button" onclick="openHelp()">Ayuda</button>
+        <button class="menu-button" onclick="exitGame()">Salir</button>
+    </div>
+    <div id="gameUI">
+        <p>Tiempo: <span id="time">0</span> s</p>
+        <p>Puntaje: <span id="score">0</span></p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="js/gameWindow.js"></script>
+
+</html>
